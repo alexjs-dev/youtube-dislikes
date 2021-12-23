@@ -1,0 +1,22 @@
+{
+  "name": "YouTube dislikes",
+  "version": "1.0",
+  "author": "Alex Dmitrijev",
+  "description": "Dislike videos on YouTube",
+  "icon": "youtube-dislikes.png",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "youtube-dislikes.png",
+    "default_title": "YouTube dislikes",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
